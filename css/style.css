@@ -1,0 +1,248 @@
+:root{
+    --fuenteHeaderPrincipal: 'Arimo', sans-serif;
+    --fuenteHeaders: 'Abel', sans-serif;
+    --fuenteParrafos: 'Barlow Condensed', sans-serif;
+    --fuenteIdiomas: 'Source Sans Pro', sans-serif;
+    --fuenteBotones: 'Lato', sans-serif;
+    --gris: rgb(93, 99, 131);
+    --azul: #255779;
+    --azulClaro: #328ecb;
+    --azulOscuro: #1038ed;
+}
+
+/*GLOBALES*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 20px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 16px; /* 1rem = 10px*/
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+html{
+    border: 30px solid black;
+}
+
+/*HEADER*/
+.header_curriculum{
+    margin: 0;
+    background-color: rgb(58 57 57);
+}
+
+.header_curriculum h1{
+    margin: 0;
+    padding: 25px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--fuenteHeaderPrincipal);
+}
+
+/*INFORMACION PERSONAL*/
+.contenedor_superior{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor_informacion_personal{
+    width: 350rem;
+    text-align: center;
+}
+
+.contenedor_informacion_personal img{
+    width: 230px;
+    height: 230px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.contenedor_informacion_personal h2{
+    margin: 15px 0 15px 0;
+    font-family: var(--fuenteHeaders);
+    font-size: 4.5rem;
+}
+
+.contenedor_informacion_personal h3{
+    margin: 20px 0 20px 0;
+    font-size: 2.5rem;
+    font-family: var(--fuenteParrafos);
+}
+
+.contenedor_sobre_mi{
+    color: white;
+    background-color: var(--gris);
+    
+    -webkit-box-shadow: -6px 15px 40px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 15px 40px -6px rgba(0,0,0,0.75);
+    box-shadow: -6px 15px 40px -6px rgba(0,0,0,0.75);   
+}
+
+.sobre_mi{
+    text-align: center;
+}
+
+.sobre_mi h2{
+    font-family: var(--fuenteHeaders);
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    margin: 2rem;
+}
+
+.sobre_mi p{
+    font-family: var(--fuenteParrafos);
+    font-size: 2rem;
+    line-height: 43px;
+    margin: 0;
+    padding: 0 20px 20px 20px;
+}
+
+.idiomas{
+    padding-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.idiomas h2{
+    font-family: var(--fuenteHeaders);
+    text-decoration: underline;
+}
+
+.idiomas p{
+    font-size: 1.7rem;
+    font-family: var(--fuenteIdiomas);
+    margin-bottom: 5px;
+}
+
+.contenedor_circulos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contenedor_circulos div{
+    border: 2px solid black;
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+}
+
+.contenedor_idiomas:last-of-type div:nth-of-type(2), .contenedor_idiomas:last-of-type div:nth-of-type(3){
+    background-color: white;
+}
+
+.contenedor_circulos div:nth-of-type(1),.contenedor_circulos div:nth-of-type(2),.contenedor_circulos div:nth-of-type(3){
+    background-color: var(--azulOscuro);
+}
+
+/*CONTACTO*/
+
+.contenedor_inferior{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+
+.contenedor_contacto{
+    padding: 25px 0 25px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--azul);
+    color: white;
+
+    -webkit-box-shadow: 6px 15px 40px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 15px 40px -6px rgba(0,0,0,0.75);
+    box-shadow: 6px 15px 40px -6px rgba(0,0,0,0.75);    
+}
+
+.contenedor_contacto div{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_contacto h3{
+    font-family: var(--fuenteHeaders);
+    font-size: 4.5rem;
+}
+
+.contenedor_h3_contacto{
+    justify-content: center;
+}
+
+.contenedor_iconos{
+    gap: 6px;
+    justify-content: center;
+}
+
+.contenedor_iconos p, a{
+    font-family: var(--fuenteParrafos);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contenedor_iconos a{
+    color: white;
+}
+
+.contenedor_iconos a:hover{
+    color: var(--azulClaro);
+}
+
+/*BOTONES*/
+
+.contenedor_experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor_botones{
+
+}
+
+.boton_habilidades, .boton_experiencia, .boton_educacion{
+    font-size: 2.5rem;
+    font-family: var(--fuenteBotones);
+    gap: 5px;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 3px solid rgb(191, 169, 169);
+    text-align: left;
+    outline: none;
+}
+
+#simboloHabilidades{
+    text-align: end;
+}
+
+.boton_experiencia{
+    text-align: end;
+}
+
+.lista1, .lista2, .lista3{
+    display: none;
+}
+
+.lista2{
+    text-align: end;
+}
