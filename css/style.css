@@ -155,12 +155,14 @@ html{
 
 .contenedor_inferior{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
     
 }
 
 .contenedor_contacto{
-    padding: 25px 0 25px 0;
+    position: relative;
+    top: 63px;
+    height: 60rem;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -184,6 +186,7 @@ html{
 }
 
 .contenedor_h3_contacto{
+    margin-top: 20px;
     justify-content: center;
 }
 
@@ -276,6 +279,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .contenedor_botones{
@@ -294,10 +298,6 @@ html{
     border: 3px solid rgb(255, 0, 0);
     text-align: left;
     outline: none;
-}
-
-#simboloHabilidades{
-    text-align: end;
 }
 
 .boton_experiencia{
