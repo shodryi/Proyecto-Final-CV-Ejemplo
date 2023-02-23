@@ -233,28 +233,41 @@ html{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 2rem;
+    font-family: var(--fuenteParrafos);
+    font-weight: 500;
+    text-align: center;
+    color: white;
 }
 
 .referencias p{
     margin: 0;
 }
 
-.contenedor_referencias{
+.contenedor_referencias, .listaDisponibilidades{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 320px;
-    margin: 10px;
     background-color: var(--celesteClaro);
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    font-family: var(--fuenteParrafos);
-    font-weight: 500;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.contenedor_referencias{
+    padding: 5px;
+    line-height: 1.8;
+    width: 320px;
+    margin-bottom: 0;
 }
 
 .listaDisponibilidades{
-    height:unset;
+    padding: 5px;
+}
+
+.listaDisponibilidades div{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 2px;
 }
 
 /*BOTONES*/
