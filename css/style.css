@@ -8,6 +8,7 @@
     --azul: #255779;
     --azulClaro: #328ecb;
     --azulOscuro: #1038ed;
+    --celesteClaro: #4a6dbe;
 }
 
 /*GLOBALES*/
@@ -210,29 +211,42 @@ html{
 .contenedor_aptitudes_referencias h3{
     font-family: var(--fuenteHeaders);
     font-size: 4rem;
-    margin: 10px 0 0 25px;
+    margin-top: 15px;
+    text-align: center;
 }
 
-.listaAptitudes li{
+.contenedor_aptitudes{
+    text-align: center;
+}
+
+.listaAptitudes{
+    margin: 5px 0 5px 0;
     font-family: var(--fuenteParrafos);
     font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: disclosure-closed;
 }
 
-.contenedor_referencias{
+.referencias{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.contenedor_referencias p{
+.referencias p{
     margin: 0;
 }
 
-.contenedor_referencias div, .contenedor_referencias ul{
+.contenedor_referencias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 320px;
-    height: 130px;
-    background-color: #ccc;
     margin: 10px;
+    background-color: var(--celesteClaro);
+    color: white;
     text-align: center;
     font-size: 2rem;
     font-family: var(--fuenteParrafos);
@@ -240,9 +254,7 @@ html{
 }
 
 .listaDisponibilidades{
-    padding: 0;
-    margin-top: auto;
-    list-style: none;
+    height:unset;
 }
 
 /*BOTONES*/
