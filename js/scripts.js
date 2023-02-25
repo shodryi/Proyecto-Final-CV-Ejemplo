@@ -8,10 +8,10 @@ var listas = [document.getElementById("listaHabilidades"), document.getElementBy
 var simbolos = [document.getElementById("simboloHabilidades"), document.getElementById("simboloExperiencia"), document.getElementById("simboloEducacion")];
 
 function mostrarOcultarLista(numero) {
-  if (listas[numero].style.display === "none") {
-    listas[numero].style.display = "flex";
-  } else {
+  if (listas[numero].style.display === "flex") {
     listas[numero].style.display = "none";
+  } else {
+    listas[numero].style.display = "flex";
   }
   cambioDeSimbolo(numero);
 }

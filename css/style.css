@@ -285,6 +285,7 @@ html{
 .contenedor_experiencia li, .contenedor_experiencia p{
     font-family: var(--fuenteParrafos);
     font-size: 20px;
+    transition: max-height 0.2s ease-out;
 }
 
 .contenedor_botones{
@@ -320,8 +321,7 @@ html{
 
 .lista_habilidades, .lista_experiencia, .lista_educacion{
     width: 95%;
-    display: flex;
-    transition: max-height 0.2s ease-out;
+    display: none;
     gap: 17px;
 }
 
