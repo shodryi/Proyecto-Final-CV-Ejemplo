@@ -1,6 +1,6 @@
-var botones = document.querySelectorAll(".boton_desplegable");
-var listas = document.querySelectorAll(".lista_desplegable");
-var simbolos = document.querySelectorAll(".simbolo_desplegable");
+const botones = document.querySelectorAll(".boton_desplegable");
+const listas = document.querySelectorAll(".lista_desplegable");
+const simbolos = document.querySelectorAll(".simbolo_desplegable");
 
 botones.forEach(function(boton, indice) {
   boton.addEventListener("click", function() {
