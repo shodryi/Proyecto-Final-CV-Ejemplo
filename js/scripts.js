@@ -4,7 +4,7 @@ var botonExperiencia = document.getElementById("botonExperiencia");
 var botonEducacion = document.getElementById("botonEducacion");
 
 var simboloHabilidades = document.getElementById("simboloHabilidades");
-var listas = [document.getElementById("lista1"), document.getElementById("lista2"), document.getElementById("lista3")];
+var listas = [document.getElementById("listaHabilidades"), document.getElementById("listaExperiencia"), document.getElementById("listaEducacion")];
 
 function mostrarOcultarLista(numero) {
   if (listas[numero].style.display === "none") {

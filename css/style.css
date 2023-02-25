@@ -5,6 +5,7 @@
     --fuenteIdiomas: 'Source Sans Pro', sans-serif;
     --fuenteBotones: 'Lato', sans-serif;
     --gris: rgb(93, 99, 131);
+    --grisClaro: rgb(207, 207, 207);
     --azul: #255779;
     --azulClaro: #328ecb;
     --azulOscuro: #1038ed;
@@ -276,26 +277,34 @@ html{
 /*BOTONES*/
 
 .contenedor_experiencia{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 50px;
+    padding: 20px 0 20px 0;
+    background-color: var(--grisClaro);
+}
+
+.contenedor_experiencia li, .contenedor_experiencia p{
+    font-family: var(--fuenteParrafos);
+    font-size: 20px;
 }
 
 .contenedor_botones{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 20px 0;
 }
 
 .boton_habilidades, .boton_experiencia, .boton_educacion{
     font-size: 2.5rem;
     font-family: var(--fuenteBotones);
     gap: 5px;
-    background-color: #777;
+    background-color: #222c6a;
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
-    border: 3px solid rgb(255, 0, 0);
+    width: 95%;
+    border: 3px solid #196daf;
+    border-radius: 5px;
     text-align: left;
     outline: none;
 }
@@ -304,10 +313,14 @@ html{
     text-align: end;
 }
 
-.lista1, .lista2, .lista3{
-    display: none;
+.lista_habilidades, .lista_experiencia, .lista_educacion{
+    width: 95%;
+    display: flex;
+    transition: max-height 0.2s ease-out;
+    align-items: center;
+    gap: 17px;
 }
 
-.lista2{
+.lista_experiencia{
     text-align: end;
 }
