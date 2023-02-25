@@ -3,18 +3,24 @@ var botonHabilidades = document.getElementById("botonHabilidades");
 var botonExperiencia = document.getElementById("botonExperiencia");
 var botonEducacion = document.getElementById("botonEducacion");
 
-var simboloHabilidades = document.getElementById("simboloHabilidades");
 var listas = [document.getElementById("listaHabilidades"), document.getElementById("listaExperiencia"), document.getElementById("listaEducacion")];
+
+var simbolos = [document.getElementById("simboloHabilidades"), document.getElementById("simboloExperiencia"), document.getElementById("simboloEducacion")];
 
 function mostrarOcultarLista(numero) {
   if (listas[numero].style.display === "none") {
     listas[numero].style.display = "flex";
-    simboloHabilidades.innerHTML = '-';
-    //contenedorExperiencia.style.gap = 0;
   } else {
     listas[numero].style.display = "none";
-    simboloHabilidades.innerHTML = '+';
-    //contenedorExperiencia.style.gap = '157px';
+  }
+  cambioDeSimbolo(numero);
+}
+
+function cambioDeSimbolo(numero){
+  if(simbolos[numero].innerHTML === '+'){
+    simbolos[numero].innerHTML = '-';
+  } else {
+    simbolos[numero].innerHTML = '+';
   }
 }
 

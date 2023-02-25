@@ -294,6 +294,11 @@ html{
     margin: 20px 0 20px 0;
 }
 
+.contenedor_botones span{
+    height: 100%;
+    text-align: end;
+}
+
 .boton_habilidades, .boton_experiencia, .boton_educacion{
     font-size: 2.5rem;
     font-family: var(--fuenteBotones);
@@ -317,7 +322,6 @@ html{
     width: 95%;
     display: flex;
     transition: max-height 0.2s ease-out;
-    align-items: center;
     gap: 17px;
 }
 
