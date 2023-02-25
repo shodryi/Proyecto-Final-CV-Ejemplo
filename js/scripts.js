@@ -13,3 +13,17 @@ botones.forEach(function(boton, indice) {
     }
   });
 });
+
+const urlLinkedin = document.querySelectorAll(".url");
+
+const svg = document.querySelectorAll('.icon-tabler-brand-linkedin');
+
+
+
+urlLinkedin.addEventListener('mouseover', () => {
+    svg.setAttribute('stroke', '#328ecb');
+});
+
+urlLinkedin.addEventListener('mouseout', () => {
+  svg.setAttribute('stroke', '#ffffff');
+});
