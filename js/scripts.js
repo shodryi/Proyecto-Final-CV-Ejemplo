@@ -14,16 +14,15 @@ botones.forEach(function(boton, indice) {
   });
 });
 
-const urlLinkedin = document.querySelectorAll(".url");
+const urls = document.querySelectorAll(".url");
+const svg = document.querySelectorAll(".iconoUrls");
 
-const svg = document.querySelectorAll('.icon-tabler-brand-linkedin');
+urls.forEach(function(url, indice){
+  url.addEventListener("mouseover", () => {
+    svg[indice].setAttribute('stroke', '#328ecb');
+  });
 
-
-
-urlLinkedin.addEventListener('mouseover', () => {
-    svg.setAttribute('stroke', '#328ecb');
-});
-
-urlLinkedin.addEventListener('mouseout', () => {
-  svg.setAttribute('stroke', '#ffffff');
+  url.addEventListener("mouseout", () => {
+    svg[indice].setAttribute("stroke", "#ffffff")
+  })
 });
