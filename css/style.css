@@ -112,6 +112,7 @@ html{
 }
 
 .idiomas{
+    margin: 0 30px 0 30px;
     padding-bottom: 20px;
     display: flex;
     gap: 20px;
@@ -196,7 +197,7 @@ html{
     justify-content: center;
 }
 
-.contenedor_iconos p, a{
+.contenedor_iconos p, .contenedor_iconos a{
     font-family: var(--fuenteParrafos);
     font-size: 2rem;
     margin: 0;
@@ -216,10 +217,6 @@ html{
     font-family: var(--fuenteHeaders);
     font-size: 4rem;
     margin-top: 15px;
-    text-align: center;
-}
-
-.contenedor_aptitudes{
     text-align: center;
 }
 
@@ -326,4 +323,59 @@ html{
 
 .lista_experiencia{
     text-align: end;
+}
+
+/*MEDIA QUERYS*/
+@media (max-width: 1170px) {
+    .contenedor_superior{
+        flex-direction: column;
+    }
+
+    .contenedor_informacion_personal{
+        width: auto;
+    }
+
+    .contenedor_inferior{
+        grid-template-columns: 50% 50%;
+    }
+
+    .contenedor_contacto{
+        width: 100%;
+        justify-self: center;
+        position: static;
+    }
+
+    .contenedor_experiencia{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .idiomas{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contenedor_inferior{
+        grid-template-columns:  none;
+    }
+
+    .contenedor_contacto{
+        width: 65%;
+    }
+
+    .contenedor_experiencia{
+        margin-top: 20px;
+    }
+
+    .lista_desplegable{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor_contacto{
+        width: 100%;
+    }
 }
